@@ -62,7 +62,7 @@ zsteg -a stego.png
 
 Result: zsteg successfully identified the flag embedded in the b1,rgb,lsb,xy channel.
 
-![Stego Extraction](assets/stego_extraction.jpg)
+![Stego Extraction](assets/stego_extraction.png)
 *Figure: assets/stego_extraction.jpg showing the dd extraction and the final zsteg output.*
 
 Flag 🚩
