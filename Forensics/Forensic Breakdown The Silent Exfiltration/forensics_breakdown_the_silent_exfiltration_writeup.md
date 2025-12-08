@@ -38,7 +38,6 @@ I analyzed the `log_processor` binary to search for embedded files using `binwal
 
 **Command:**
 
-
 sudo binwalk -e log_processor --run-as=root
 
 Note: The --run-as=root flag was used to execute binwalk without permission issues.
