@@ -1,10 +1,11 @@
-🚩 Write-up: Echoes of a Proton
-Event: EY-DSCI CTF 2025 (Pullman Aerocity, Delhi) 
-Category: Forensics 
-Points: 200 
-Date: Dec 3, 2025
+# Echoes of a Proton
 
-# 1. Initial Analysis and Scenario Setup
+**Event:** EY-DSCI CTF 2025 (Pullman Aerocity, Delhi)  
+**Category:** Forensics  
+**Points:** 200  
+**Date:** Dec 3, 2025  
+
+# 1. Initial Analysis and Scenario Setup 🕵️‍♀️
 
 The challenge presented an image (challenge.jpg) with a quote about the dissolution of a proton, hinting at multiple layers, hidden files, and useful metadata.
 
@@ -102,7 +103,7 @@ python3 solve.py
 
 Figure 05_solver.png : The execution of the Python script to decrypt the ciphertext.
 
-# 6. Case-Sensitivity Insight
+# 6. Case-Sensitivity Insight ⚠️
 The script successfully decrypted the ciphertext to CTFEYDSCI{PROTON_PARADOX}. However, upon submission, the flag was rejected.
 
 Result: ❌ Incorrect.
@@ -114,5 +115,5 @@ By converting the result to entirely lowercase, the correct flag was revealed:
 ctfeydsci{proton_paradox}
 Result: ✅ Correct.
 
-# The Flag
+# The Flag 🚩
 ctfeydsci{proton_paradox}
