@@ -30,7 +30,7 @@ I used the script [files/solve_hint.py](files/solve_hint.py), which employs a **
 
 **Execution:**
 ![Script Execution](assets/script_execution.png)
-_Figure: assets/script_execution.jpg showing the successful key cracking output._
+_Figure: assets/script_execution.png showing the successful key cracking output._
 
 ### 2. Binary Forensics with Binwalk
 
