@@ -11,7 +11,7 @@ The challenge presented an image (challenge.jpg) with a quote about the dissolut
 
 You're given a single, innocent-looking image... Somewhere inside this file, there's a flag hidden across multiple layers. The clues are scattered... The metadata may be whispering something useful...
 
-Figure 01_challenge.png : The initial challenge prompt.
+![Challenge Description](assets/01_challenge.png)
 
 # 2. Metadata Whispers: The Cipher Key
 
@@ -24,7 +24,7 @@ Subject: secret_key=#E6E6FA
 
 User Comment: not ROT, not ATBASH... keyword rules
 
-Figure 02_exiftool.png : Exiftool reveals the hex code and cipher type hint.
+![Using Exiftool](assets/02_exiftool.png) : Exiftool reveals the hex code and cipher type hint.
 
 The hex code #E6E6FA is the color code for Lavender. The comment "keyword rules" strongly indicated a Vigenère Cipher using the key lavender.
 
@@ -40,7 +40,7 @@ note.txt
 banner.png
 core.bin
 
-Figure 03_binwalk.jpg : Failed steghide attempts followed by the successful binwalk extraction.
+![Using Binwalk](assets/03_binwalk.jpg) : Failed steghide attempts followed by the successful binwalk extraction.
 
 # 4. Deep Forensics: Locating the Ciphertext
 Inside the extracted directory, I first read note.txt:
@@ -62,7 +62,7 @@ echo "bnRhaWxnd3R0e3Btc2dycl9nbHJ2aGjhfQ==" | base64 -d
 
 This was our ciphertext.
 
-Figure 04_strings.jpg : Reading note.txt and locating the Base64 string inside core.bin.
+![Using Strings](assets/04_strings.png) : Reading note.txt and locating the Base64 string inside core.bin.
 
 # 5. Decryption: The Custom Python Solver
 
@@ -101,7 +101,7 @@ Executing the script gave the decoded text:
 python3 solve.py
 # Output: CTFEYDSCI{PROTON_PARADOX}
 
-Figure 05_solver.png : The execution of the Python script to decrypt the ciphertext.
+![Solver](assets/05_solver.png) : The execution of the Python script to decrypt the ciphertext.
 
 # 6. Case-Sensitivity Insight ⚠️
 The script successfully decrypted the ciphertext to CTFEYDSCI{PROTON_PARADOX}. However, upon submission, the flag was rejected.
