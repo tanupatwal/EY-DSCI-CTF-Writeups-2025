@@ -29,7 +29,7 @@ The encrypted hex string was analyzed using a **Single Byte XOR cipher** brute-f
 I used the script [files/solve_hint.py](files/solve_hint.py), which employs a **"loose filter"**. This filter accepts results where >90% of the characters are readable ASCII. This heuristic was necessary because a strict filter failed due to potential noise bytes or formatting characters in the decrypted string.
 
 **Execution:**
-![Script Execution](assets/script_execution.jpg)
+![Script Execution](assets/script_execution.png)
 _Figure: assets/script_execution.jpg showing the successful key cracking output._
 
 ### 2. Binary Forensics with Binwalk
@@ -38,7 +38,7 @@ I analyzed the `log_processor` binary to search for embedded files using `binwal
 
 **Command:**
 
-```bash
+
 sudo binwalk -e log_processor --run-as=root
 
 Note: The --run-as=root flag was used to execute binwalk without permission issues.
